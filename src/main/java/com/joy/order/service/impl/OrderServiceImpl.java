@@ -10,6 +10,7 @@ import com.joy.order.service.OrderService;
 import com.joy.order.utils.KeyUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import javax.rmi.CORBA.Util;
 import java.math.BigDecimal;
@@ -17,6 +18,7 @@ import java.math.BigDecimal;
 /**
  * Created by Ai Lun on 2019-07-25.
  */
+@Service
 public class OrderServiceImpl implements OrderService {
 
     @Autowired

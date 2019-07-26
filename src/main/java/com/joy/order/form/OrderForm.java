@@ -1,12 +1,13 @@
 package com.joy.order.form;
 
+import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
 
 /**
  * Created by Ai Lun on 2019-07-26.
  */
+@Data
 public class OrderForm {
-
 
     /**
      * 买家姓名
