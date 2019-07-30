@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients
+@EnableFeignClients(basePackages = "com.joy.order.client")
 public class OrderApplication {
 
     public static void main(String[] args) {

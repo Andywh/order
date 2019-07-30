@@ -11,12 +11,21 @@
     <groupId>com.joy</groupId>
     <artifactId>order</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
+    <modules>
+        <module>common</module>
+        <module>client</module>
+        <module>server</module>
+    </modules>
+
     <name>order</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.M2</spring-cloud.version>
+        <product-client.version>0.0.1-SNAPSHOT</product-client.version>
+        <order-common.version>0.0.1-SNAPSHOT</order-common.version>
     </properties>
 
     <dependencies>
@@ -82,8 +91,6 @@
             <version>2.0.0.M3</version>
         </dependency>
 
-
-
     </dependencies>
 
     <dependencyManagement>
@@ -95,6 +102,19 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <dependency>
+                <groupId>com.joy</groupId>
+                <artifactId>product-client</artifactId>
+                <version>${product-client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.joy</groupId>
+                <artifactId>order-common</artifactId>
+                <version>${order-common.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
