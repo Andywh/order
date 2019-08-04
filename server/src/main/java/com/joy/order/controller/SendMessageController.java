@@ -34,4 +34,5 @@ public class SendMessageController {
         orderDTO.setOrderId("123456");
         streamClient.output().send(MessageBuilder.withPayload(orderDTO).build());
     }
+
 }
